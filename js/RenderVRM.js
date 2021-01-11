@@ -44,6 +44,7 @@ async function setupCamera(videoElement) {
   kasoucamera.addTrack(myaudio);
 
   // 着信時に相手にカメラ映像を返せるように、グローバル変数に保存しておく
+  // Git管理をするテスト
   localStream = kasoucamera;
   return new Promise(resolve => {
     videoElement.onloadedmetadata = () => {
